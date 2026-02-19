@@ -120,9 +120,21 @@
     margin: 0 auto;
   }
 
+  h1 {
+    align-items: center;
+    text-align: center;
+  }
   .carrossel-legenda h1 {
     font-size: 1.8rem;
     margin-bottom: 15px;
+    align-items: center;
+    text-align: center;
+  }
+  .carrossel-legenda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .carrossel-legenda .btn {
