@@ -33,6 +33,21 @@
     </nav>
   </header>
 
+  <script>
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script>
+
   <!-- HERO CARROSSEL -->
   <section class="hero-carrossel">
     <div class="carrossel">
@@ -63,6 +78,21 @@
         </div>
       </div>
     </div>
+
+    <script>
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script>
 
     <svg class="wave-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
       <path fill="#ffffff" d="M0,250 C360,300 720,200 1080,250 C1320,280 1440,200 1440,200 L1440,300 L0,300 Z"></path>
@@ -145,11 +175,7 @@
           </a>
         </div>
         <!--INVISIVEL-->
-        <div class="projeto" style="visibility: hidden;">
-          <img src="img/projeto.png" alt="Projeto 4">
-          <h3>NOME</h3>
-          <p>Descrição projeto 4</p>
-        </div>
+       
       </div>
     </div>
     <svg class="wave-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300">
